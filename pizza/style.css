@@ -1,0 +1,398 @@
+/* Google Font 'Ubuntu Mono', monospce */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+/* Google Font 'Poppins' sans serif*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    background: #dfd9d9;
+}
+
+header{
+    position: relative;
+    width: 75%;
+    height: auto;
+    border: 1px solid #fff;
+    margin: 30px auto 0px auto;
+    border-radius: 20px 20px 0px 0px;
+    background: #ebe7e6;
+}
+
+header .iso{
+    position: absolute;
+    display: flex;
+    top: 15px;
+    left: 15px;
+}
+header .iso h6{
+    width: 10px;
+    height: 10px;
+    background: #ff7461;
+    margin-left: 5px;
+    border-radius: 50%;
+}
+
+
+header .iso h6:nth-child(2){
+    background: #ffd74d;
+}
+header .iso h6:nth-child(3){
+    background: #81d69f;
+}
+
+header nav {
+    width: 75%;
+    height: 40px;
+    /* border: 1px solid #000; */
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav .logo{
+    font-family: 'Ubuntu Mono', monospace;
+}
+header nav .logo span{
+   color: #d31b27;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+}
+header nav ul li{
+    list-style-type: none;
+    padding: 5px 10px;
+}
+header nav ul li a{
+   text-decoration: none;
+   font-size: 11px;
+   color: #000;
+   transition: .3s ease-in-out;
+}
+header nav ul li:nth-child(1) a{
+   color: #d31b27;
+}
+header nav ul li a:hover{
+   color: #d31b27;
+}
+
+header nav .sign_cart {
+    display: flex;
+    align-items: center;
+}
+header nav .sign_cart a{
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 15px;
+    transition: .3s linear;
+    overflow: hidden;
+}
+header nav .sign_cart a img{
+    width: 23px;
+    height: 20px;
+}
+
+header nav .sign_cart a:nth-child(2){
+    background: #d31b27;
+    padding: 8px 25px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: .3s linear;
+}
+
+
+/* utilites class start  */
+.btn::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: #d31b27;
+    border-radius: 20px;
+    top: 0;
+    right: 0;
+    transition: .3s linear;
+}
+.btn:hover::before{
+    width: 100%;
+    left: 0;
+}
+/* utilites class end  */
+
+header nav .sign_cart a:nth-child(2):hover{
+    background: none;
+}
+
+header nav .sign_cart a h6 {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #d31b27;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    transition: .4s ease-in-out;
+}
+header nav .sign_cart a:hover h6 {
+    background: #ffd74d;
+    filter: hue-rotate(360deg);
+}
+
+header section {
+    width: 75%;
+    height: 350px;
+    /* border: 1px solid #000; */
+    margin: auto;
+    display: flex;
+}
+header section .cont_bx, .img_bx{
+    position: relative;
+    width: 45%;
+    height: 100%;
+    /* border: 1px solid #000; */
+}
+header section .img_bx{
+    width: 55%;
+}
+
+header section .cont_bx h2 {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 45px;
+    font-weight: 700;
+    margin-top: 20px;
+    word-spacing: -10px;
+}
+header section .cont_bx .btns{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+header section .cont_bx .btns a{
+    position: relative;
+    padding: 10px 20px;
+    background: #d31b27;
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 20px;
+    margin-right: 10px;
+    transition: .3s linear;
+    overflow: hidden;
+}
+header section .cont_bx .btns a:nth-child(2){
+    background: #fff;
+    color: #000;
+}
+header section .cont_bx .btns a:hover{
+    background: none;
+}
+header section .cont_bx .reviews{
+    margin-top: 30px;
+}
+header section .cont_bx .reviews .card{
+   width: 50%;
+   display: flex;
+   align-items: center;
+   margin-top: 5px;
+   cursor: pointer;
+}
+header section .cont_bx .reviews .card .user{
+   position: relative;
+   width: 30px;
+   height: 30px;
+   background: #fff;
+   border-radius: 50%;
+   font-size: 9px;
+   display: grid;
+   place-items: center;
+   overflow: hidden;
+   transition: all .4s linear;
+}
+header section .cont_bx .reviews .card .user img{
+   width: 100%;
+   height: 100%;
+}
+header section .cont_bx .reviews .card .user_2{
+   margin-left: -6px;
+}
+header section .cont_bx .reviews .card:hover .user_2{
+   margin-left: 3px;
+}
+header section .cont_bx .reviews .star{
+   color: #feaa09;
+   font-size: 11px;
+}
+
+header section .img_bx .main_food_head {
+    position: relative;
+    width: 450px;
+    height: 400px;
+    top: -25px;
+    animation: food 1.6s linear infinite; 
+}
+@keyframes food {
+    0%, 100% {
+        top: -25px;
+    }
+    50% {
+        top: -35px;
+    }
+}
+
+header section .img_bx .discount {
+    position: absolute;
+    width: 170px;
+    height: 65px;
+    /* background: greenyellow; */
+    top: 10px;
+    border-radius: 15px;
+    z-index: 2;
+}
+header section .img_bx .discount::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(184, 184, 184, .15);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    z-index: -1;
+}
+header section .img_bx .discount h3{
+   padding: 5px 0px 5px 20px;
+}
+header section .img_bx .discount h5{
+   padding: 0px 0px 5px 20px;
+}
+header section .img_bx .discount h5 span{
+   color: #d31b27;
+}
+header section .img_bx .discount img{
+   position: absolute;
+   width: 35px;
+   height: 35px;
+   top: -16px;
+   right: 40px;
+}
+
+header .food_card{
+    position: relative;
+    width: 90%;
+    height: 290px;
+    /* border: 1px solid #000; */
+    margin: auto;
+}
+header .food_card .card_bx{
+    width: 85%;
+    height: 290px;
+    /* border: 1px solid #000; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+header .food_card .card_bx::-webkit-scrollbar{
+  display: none;
+}
+header .food_card .card_bx .card{
+    position: relative;
+    min-width: 173.8px;
+    height: 220px;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #cacaca, #fafafa);
+    box-shadow:  20px 20px 60px #e4e4e4,
+             -20px -20px 60px #f0eded;
+             margin-right: 20px;
+             cursor: pointer;
+}
+header .food_card .card_bx .card .card_main_img{
+    position: absolute;
+    width: 130px;
+    right: 0;
+    top: -25px;
+    transition: .4s linear;
+}
+header .food_card .card_bx .card:hover .card_main_img{
+   transform: rotate(360deg);
+}
+header .food_card .card_bx .card .cart_c{
+   position: absolute;
+   width: 35px;
+   height: 35px;
+   background: #000;
+   border-radius: 10px 10px 30px 10px;
+   top: -15px;
+   right: -5px;
+   display: grid;
+   place-items: center;
+   transition: .3s ease-in-out;
+}
+header .food_card .card_bx .card .cart_c:hover{
+   border-radius: 20px 10px 10px 10px;
+}
+header .food_card .card_bx .card .cart_c img{
+   width: 20px;
+   height: 20px;
+}
+header .food_card .card_bx .card .content{
+  margin-top: 110px;
+  padding-left: 30px;
+}
+header .food_card .card_bx .card .content h3{
+  font-size: 15px;
+}
+header .food_card .card_bx .card .content h5{
+  font-size: 11px;
+  color: #282828;
+}
+header .food_card .card_bx .card .content .price{
+  margin-top: 25px;
+}
+
+header .food_card .left_arrow {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    background: #d31b27;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    padding: 8px 10px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+header .food_card .left_arrow img{
+    width: 15px;
+    height: 15px;
+    margin-top: 2px;
+}
+header .food_card .left_arrow:hover{
+    background: #000;
+}
+header .food_card .left_arrow:nth-child(2) {
+    left: 95%;
+    transform: rotate(180deg);
+}
+
+.leaf{
+    position: absolute;
+    top: -3%;
+    right: 17%;
+    filter: blur(1.5px);
+}
+.leaf2{
+    width: 90px;
+    top: 50%;
+    left: 8.5%;
+    filter: blur(1px);
+}
